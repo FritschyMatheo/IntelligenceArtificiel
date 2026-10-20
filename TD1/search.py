@@ -5,7 +5,7 @@ from __future__ import annotations
 import random
 from collections import deque
 
-from TD1.pokemon_game import GameMap, State, successors
+from pokemon_game import GameMap, State, successors
 
 
 def generate_random_path(

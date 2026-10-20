@@ -50,7 +50,7 @@ ACTION_DELTAS: dict[str, State] = {
 # File paths
 # ---------------------------------------------------------------------------
 
-SPRITE_DIRECTORY = Path("./pokemon-sprites")
+SPRITE_DIRECTORY = Path(__file__).resolve().parent / "pokemon-sprites"
 
 SPRITE_PATHS = {
     "tree": SPRITE_DIRECTORY / "tree.svg",

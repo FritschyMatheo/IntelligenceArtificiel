@@ -4,13 +4,13 @@ import matplotlib
 
 matplotlib.use("TkAgg")
 
-from TD1.pokemon_game import (
+from pokemon_game import (
     draw_map,
     generate_map,
     path_to_actions,
     visualize_path,
 )
-from TD1.search import generate_random_path, breadth_first_search, depth_first_search
+from search import generate_random_path, breadth_first_search, depth_first_search
 
 # Using a fixed seed gives every student the same example.
 # Replace it with None to generate a different map on each execution.
