@@ -8,7 +8,7 @@ python -m venv .venv
 
 .\.venv\Scripts\Activate.ps1
 
-pip install -r requirements.txt
+pip install -r TD1\requirements.txt
 
 python.exe -m pip install --upgrade pip
 
