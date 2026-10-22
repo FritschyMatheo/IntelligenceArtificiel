@@ -1,5 +1,3 @@
-"""Connect Four TD — benchmarking Minimax, Alpha-Beta and MCTS."""
-
 import matplotlib.pyplot as plt
 
 from algorithms import alphabeta, mcts, minimax
@@ -74,10 +72,9 @@ def plot_results(results, filename="benchmark.png"):
     for name, label in (("minimax", "Minimax"), ("alphabeta", "Alpha-Beta")):
         nodes = [r["nodes"] for r in results if r["algorithm"] == name]
         ax_nodes.plot(DEPTHS, nodes, marker="o", label=label)
-    ax_nodes.set_yscale("log")
     ax_nodes.set_xticks(DEPTHS)
     ax_nodes.set_xlabel("Search depth")
-    ax_nodes.set_ylabel("Explored nodes (log scale)")
+    ax_nodes.set_ylabel("Explored nodes")
     ax_nodes.set_title("Explored nodes vs. depth")
     ax_nodes.legend()
     ax_nodes.grid(True, alpha=0.3)
